@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="350dp"
+    android:layout_height="475dp"
+    android:layout_gravity="center"
+    android:background="@drawable/border"
+    android:padding="5dp">
+
+    <EditText
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:id="@+id/txtUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter username"/>
+
+    <EditText
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="169dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter email"/>
+
+    <EditText
+        android:hint="Write about yourself"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/ic_chat_black_24dp"
+        android:id="@+id/txtContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="265dp"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="39dp"
+        android:background="@mipmap/rectback"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Save"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp" />
+</RelativeLayout>

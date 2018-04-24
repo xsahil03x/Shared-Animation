@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/mainbackground"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ivlogo"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="97dp"
+        android:src="@mipmap/logo" />
+
+
+    <LinearLayout
+        android:id="@+id/card"
+        android:layout_width="361dp"
+        android:layout_height="135dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="239dp"
+        android:background="@mipmap/cardbackground"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="90dp"
+            android:layout_height="92dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="18dp"
+            android:src="@mipmap/pic"
+            android:transitionName="imageTransition"
+            tools:targetApi="lollipop" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="26dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_bold"
+                android:text="Username"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:transitionName="nameTransition"
+                tools:targetApi="lollipop" />
+
+            <TextView
+                android:textSize="16sp"
+                android:id="@+id/lblEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="Email"
+                android:transitionName="emailTransition"
+                tools:targetApi="lollipop" />
+
+            <TextView
+                android:layout_marginEnd="10dp"
+                android:textSize="16sp"
+                android:id="@+id/lblContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="Write about yourself"
+                android:transitionName="contentTransition"
+                tools:targetApi="lollipop" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnChanger"
+        android:layout_width="175dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="112dp"
+        android:background="@mipmap/btnbackground"
+        android:paddingBottom="5dp"
+        android:gravity="center"
+        android:text="Enter Details"
+        android:textAllCaps="false"
+        android:textColor="#02B3E3"
+        android:textSize="20sp"
+        android:typeface="sans" />
+
+</RelativeLayout>

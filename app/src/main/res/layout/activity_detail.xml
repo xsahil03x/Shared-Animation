@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="183dp"
+        android:layout_height="176dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:transitionName="imageTransition"
+        app:srcCompat="@mipmap/pic"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="280dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Username"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        android:transitionName="nameTransition"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/textView1"
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="Email"
+        android:textSize="20sp"
+        android:transitionName="emailTransition"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/textView2"
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="Write about yourself"
+        android:textSize="18sp"
+        android:paddingStart="25sp"
+        android:paddingEnd="20sp"
+        android:transitionName="contentTransition"
+        tools:targetApi="lollipop" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/thankyou" />
+
+</RelativeLayout>
