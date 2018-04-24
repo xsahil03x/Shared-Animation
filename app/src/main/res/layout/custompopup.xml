@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="350dp"
-    android:layout_height="475dp"
+    android:layout_height="wrap_content"
     android:layout_gravity="center"
     android:background="@drawable/border"
     android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <EditText
         android:drawablePadding="10dp"
@@ -46,12 +50,13 @@
         android:inputType="textMultiLine" />
 
     <Button
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_below="@id/txtContent"
         android:id="@+id/btnSave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="39dp"
         android:background="@mipmap/rectback"
         android:fontFamily="@font/nunito_bold"
         android:text="Save"
@@ -59,4 +64,7 @@
         android:paddingBottom="5dp"
         android:textColor="#FFFFFF"
         android:textSize="23sp" />
-</RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

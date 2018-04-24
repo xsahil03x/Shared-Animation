@@ -99,12 +99,12 @@ public class MainActivity extends AppCompatActivity {
                 editor.putString("content", contents);
                 editor.apply();
 
-                lblusername.setText(name);
-                lblemail.setText(mail);
+                lblusername.setText("- "+name);
+                lblemail.setText("- "+mail);
                 if (contents.length() > 40)
-                    lblcontent.setText(contents.substring(0, 40) + ".....");
+                    lblcontent.setText("- "+contents.substring(0, 40) + ".....");
                 else
-                    lblcontent.setText(contents);
+                    lblcontent.setText("- "+contents);
 
                 btnchanger.setText("Next");
 
